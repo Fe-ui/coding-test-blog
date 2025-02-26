@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "ShY0hxoUKxxq9ogXtXeLJISxa6xRsjceyWdhciqF3kY=",
+  "Source": "BlogDotkon",
+  "BasePath": "_content/BlogDotkon",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BlogDotkon\\wwwroot",
+      "Source": "BlogDotkon",
+      "ContentRoot": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\wwwroot\\",
+      "BasePath": "_content/BlogDotkon",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\wwwroot\\css\\create-post.css",
+      "SourceId": "BlogDotkon",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\wwwroot\\",
+      "BasePath": "_content/BlogDotkon",
+      "RelativePath": "css/create-post.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\create-post.css"
+    },
+    {
+      "Identity": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\wwwroot\\css\\estilos.css",
+      "SourceId": "BlogDotkon",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\wwwroot\\",
+      "BasePath": "_content/BlogDotkon",
+      "RelativePath": "css/estilos.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\estilos.css"
+    },
+    {
+      "Identity": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\wwwroot\\css\\site.css",
+      "SourceId": "BlogDotkon",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\wwwroot\\",
+      "BasePath": "_content/BlogDotkon",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    }
+  ]
+}

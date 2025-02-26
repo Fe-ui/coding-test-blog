@@ -1,0 +1,161 @@
+﻿@model BlogDotkon.ViewModels.PostListViewModel
+@{
+    ViewData["Title"] = "Postagens";
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BlogDotkon</a>
+
+            <!-- Exibe o botão de Logout apenas se o usuário estiver autenticado -->
+            @if (User.Identity.IsAuthenticated)
+            {
+                <form id="logoutForm" method="post" action="@Url.Action("Logout", "Auth")">
+                    <button type="submit" class="btn btn-outline-danger">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </form>
+            }
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Postagens</h2>
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["ErrorMessage"]
+            </div>
+        }
+
+        <!-- Exibe o botão de "Criar Nova Postagem" apenas se o usuário estiver autenticado -->
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a class="btn btn-primary mb-3" href="@Url.Action("Create", "Post")">
+                <i class="fas fa-plus"></i> Criar Nova Postagem
+            </a>
+        }
+
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered text-center">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Título</th>
+                                <th>Autor</th>
+                                <th>Data de Criação</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var post in Model.Posts)
+                            {
+                                <tr>
+                                    <td>@post.Title</td>
+                                    <td>@post.Author</td>
+                                    <td>@post.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                                    <td>
+                                        <a class="btn btn-info btn-sm" href="@Url.Action("Details", "Post", new { id = post.Id })">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+
+                                        <!-- Exibe os botões de edição e exclusão apenas para o autor da postagem -->
+                                        @if (User.Identity.IsAuthenticated && User.Identity.Name == post.Author)
+                                        {
+                                            <a class="btn btn-warning btn-sm" href="@Url.Action("Edit", "Post", new { id = post.Id })">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+
+                                            <form method="post" action="@Url.Action("DeleteConfirmed", "Post", new { id = post.Id })" style="display: inline;">
+                                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Tem certeza que deseja excluir esta postagem?');">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </form>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
+
+                                            <script>
+    // Definir protocolo WebSocket (ws ou wss dependendo do protocolo da página)
+    const protocol = window.location.protocol === "https:" ? "wss" : "ws";
+    const socket = new WebSocket(protocol + '://' + window.location.host + '/api/websocket/connect');
+
+    // Função para lidar com mensagens recebidas
+    socket.onmessage = function (event) {
+        // Exibe a mensagem recebida (no formato texto)
+        const message = event.data;
+
+        // Criar um novo elemento de mensagem
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('alert', 'alert-info');
+        messageElement.innerText = message;
+
+        // Adicionar o elemento ao topo da página (ou qualquer lugar desejado)
+        document.body.insertBefore(messageElement, document.body.firstChild);
+
+        // Remover a mensagem após 5 segundos
+        setTimeout(() => {
+            messageElement.remove();
+        }, 4000); // 5000 milissegundos = 5 segundos
+    };
+
+    // Função para lidar com a abertura da conexão WebSocket
+    socket.onopen = function () {
+        console.log("WebSocket connected");
+        //socket.send("WebSocket conectado!"); // Envia uma mensagem para o servidor
+    };
+
+    // Função de erro de WebSocket
+    socket.onerror = function (error) {
+        console.error("WebSocket Error: ", error);
+    };
+
+    // Função de fechamento do WebSocket
+    socket.onclose = function (event) {
+        if (event.wasClean) {
+            console.log("WebSocket closed cleanly");
+        } else {
+            console.error("WebSocket closed with error");
+        }
+
+        // Tentar reconectar se a conexão for fechada inesperadamente
+        setTimeout(() => {
+            console.log("Tentando reconectar...");
+            // Recriar a conexão WebSocket
+            const socket = new WebSocket(protocol + '://' + window.location.host + '/api/websocket/connect');
+        }, 3000); // Tentar reconectar após 3 segundos
+    };
+</script>
+
+

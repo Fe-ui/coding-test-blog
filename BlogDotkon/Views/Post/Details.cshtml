@@ -1,0 +1,34 @@
+﻿@model BlogDotkon.ViewModels.PostDetailsViewModel
+
+@{
+    ViewData["Title"] = "Detalhes da Postagem";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>@ViewData["Title"]</h2>
+
+        <div class="register-container">
+            <div class="post-details">
+                <p><strong>Título:</strong> @Model.Title</p>
+                <p><strong>Descrição:</strong> @Model.Content</p>
+                <p><strong>Autor:</strong> @Model.Author</p>
+                <p><strong>Data de Criação:</strong> @Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")</p>
+            </div>
+
+            <div class="form-group">
+                <a href="@Url.Action("Index", "Post")" class="btn btn-primary">Voltar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

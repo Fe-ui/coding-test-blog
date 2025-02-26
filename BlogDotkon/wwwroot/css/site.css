@@ -1,0 +1,146 @@
+﻿/* Definindo uma cor de fundo para todo o site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para formulários */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+    .form-group label {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+    .form-control:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+/* Estilo para os botões */
+.btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-align: center; /* Garantir que o texto fique centralizado */
+    display: inline-block; /* Alinha o botão corretamente */
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+/* Estilo para o botão "Cancelar" */
+.btn-secondary {
+    background-color: #6c757d; /* Cor de fundo para o botão "Cancelar" */
+}
+
+    .btn-secondary:hover {
+        background-color: #5a6268; /* Cor de fundo para o botão "Cancelar" no hover */
+    }
+
+/* Estilo para mensagens de erro */
+.text-danger {
+    color: red;
+    font-size: 0.9rem;
+}
+
+/* Estilo para a tela de login */
+.login-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .login-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .login-container .form-group {
+        margin-bottom: 15px;
+    }
+
+    .login-container .btn {
+        width: 100%;
+    }
+
+/* Estilo para o cabeçalho */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centraliza verticalmente */
+}
+
+.post-form {
+    width: 100%;
+    background: #ffffff; /* Cor de fundo para destacar o formulário */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Estilo para os botões */
+.btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-align: center; /* Garantir que o texto fique centralizado */
+    display: inline-block; /* Alinha o botão corretamente */
+    font-size: 1rem; /* Garantir que o tamanho da fonte seja o mesmo */
+    text-decoration: none; /* Remover sublinhado do link */
+    box-sizing: border-box; /* Para incluir padding e bordas no cálculo do tamanho */
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+/* Estilo para o botão "Cancelar" */
+.btn-secondary {
+    background-color: #6c757d; /* Cor de fundo para o botão "Cancelar" */
+}
+
+    .btn-secondary:hover {
+        background-color: #5a6268; /* Cor de fundo para o botão "Cancelar" no hover */
+    }
+

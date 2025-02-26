@@ -1,0 +1,64 @@
+﻿@model BlogDotkon.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="login-container">
+        <!-- Exibição de mensagens de sucesso ou erro -->
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+
+       <br />
+
+        <form asp-controller="Auth" asp-action="Login" method="post" class="login-form">
+            @Html.AntiForgeryToken() <!-- Proteção contra CSRF -->
+
+            <!-- Exibe mensagens de erro globais -->
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Email">Email</label>
+                <input asp-for="Email" name="Email" class="form-control" type="email" required />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password">Senha</label>
+                <input asp-for="Password" name="Password" class="form-control" type="password" required />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger">
+                    @TempData["ErrorMessage"]
+                </div>
+            }
+            <br />
+        
+
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+
+        <p class="login-link">
+            Não tem uma conta?
+            <a href="@Url.Action("Register", "Auth")" class="login-link-text">Registrar</a>
+        </p>
+    </div>
+</body>
+</html>

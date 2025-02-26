@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\wwwroot\\css\\create-post.css",
+      "PackagePath": "staticwebassets\\css\\create-post.css"
+    },
+    {
+      "Id": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\wwwroot\\css\\estilos.css",
+      "PackagePath": "staticwebassets\\css\\estilos.css"
+    },
+    {
+      "Id": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlogDotkon.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlogDotkon.props",
+      "PackagePath": "build\\BlogDotkon.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlogDotkon.props",
+      "PackagePath": "buildMultiTargeting\\BlogDotkon.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlogDotkon.props",
+      "PackagePath": "buildTransitive\\BlogDotkon.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

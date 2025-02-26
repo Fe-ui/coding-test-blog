@@ -1,0 +1,92 @@
+﻿/* Definir um fundo mais claro para a página */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Estilizar o título */
+h2 {
+    text-align: center;
+    color: #007bff;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Container do formulário */
+.register-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do formulário */
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Formulário - Campos de entrada */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+    input.form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+/* Estilo para o botão */
+button.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button.btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+/* Estilo para o link de login */
+p.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Estilo para mensagens de erro */
+.text-danger {
+    font-size: 14px;
+    color: #dc3545;
+    margin-top: 5px;
+}
