@@ -20,14 +20,19 @@ Passo a passo para instalar e configurar o projeto localmente. Por exemplo:
 2. Antes de rodar o projeto, abra o terminal e execute os seguintes comandos:
 
 dotnet add package Microsoft.EntityFrameworkCore
+
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
 dotnet add package Microsoft.EntityFrameworkCore.Design
+
 dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
 dotnet add package Swashbuckle.AspNetCore
 
 3. Para criação do database com migrations, se faz necessário rodar os seguintes comandos no terminal:
 
 dotnet ef migrations add CreateDatabase
+
 dotnet ef database update
 
 OBS: Ajustar no arquivo appsettings.json string de conexão de acordo as credenciais do executante do projeto.
