@@ -3,8 +3,11 @@
 Este projeto implementa um sistema básico de blog onde os usuários podem visualizar, criar, editar e excluir postagens.
 
 -Permite registro e login de usuarios;
+
 -Realiza o gerenciamento das postagens, onde apenas usuarios autenticados podem realizar a criação, edição e exclusão de suas postagens;
+
 -Qualquer visitante pode apenas visualizar postagens;
+
 -Possui WebSockets configurado.
 
 ## 🚀 Instalação
