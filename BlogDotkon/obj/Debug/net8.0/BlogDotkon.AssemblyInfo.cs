@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlogDotkon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfe494605fe515d68c2c3db3a5f0887c871b0df0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlogDotkon")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlogDotkon")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

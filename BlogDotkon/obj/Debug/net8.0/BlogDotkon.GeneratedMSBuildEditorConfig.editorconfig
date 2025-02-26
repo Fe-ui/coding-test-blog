@@ -17,43 +17,43 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlogDotkon
 build_property.RootNamespace = BlogDotkon
-build_property.ProjectDir = C:\Users\flp_m\source\repos\BlogDotkon\BlogDotkon\
+build_property.ProjectDir = C:\Users\flp_m\source\repos\coding-test-blog\BlogDotkon\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\flp_m\source\repos\BlogDotkon\BlogDotkon
+build_property.MSBuildProjectDirectory = C:\Users\flp_m\source\repos\coding-test-blog\BlogDotkon
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/flp_m/source/repos/BlogDotkon/BlogDotkon/Views/Auth/Login.cshtml]
+[C:/Users/flp_m/source/repos/coding-test-blog/BlogDotkon/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flp_m/source/repos/BlogDotkon/BlogDotkon/Views/Auth/Register.cshtml]
+[C:/Users/flp_m/source/repos/coding-test-blog/BlogDotkon/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flp_m/source/repos/BlogDotkon/BlogDotkon/Views/Post/Create.cshtml]
+[C:/Users/flp_m/source/repos/coding-test-blog/BlogDotkon/Views/Post/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flp_m/source/repos/BlogDotkon/BlogDotkon/Views/Post/Delete.cshtml]
+[C:/Users/flp_m/source/repos/coding-test-blog/BlogDotkon/Views/Post/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flp_m/source/repos/BlogDotkon/BlogDotkon/Views/Post/Details.cshtml]
+[C:/Users/flp_m/source/repos/coding-test-blog/BlogDotkon/Views/Post/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flp_m/source/repos/BlogDotkon/BlogDotkon/Views/Post/Edit.cshtml]
+[C:/Users/flp_m/source/repos/coding-test-blog/BlogDotkon/Views/Post/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flp_m/source/repos/BlogDotkon/BlogDotkon/Views/Post/Index.cshtml]
+[C:/Users/flp_m/source/repos/coding-test-blog/BlogDotkon/Views/Post/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/flp_m/source/repos/BlogDotkon/BlogDotkon/Views/Shared/_Layout.cshtml]
+[C:/Users/flp_m/source/repos/coding-test-blog/BlogDotkon/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

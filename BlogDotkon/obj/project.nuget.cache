@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bQMEIyEc9ic=",
+  "dgSpecHash": "JHLuLQ6LHdk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\BlogDotkon.csproj",
+  "projectFilePath": "C:\\Users\\flp_m\\source\\repos\\coding-test-blog\\BlogDotkon\\BlogDotkon.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\flp_m\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\flp_m\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

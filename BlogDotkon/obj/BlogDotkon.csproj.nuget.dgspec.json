@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\BlogDotkon.csproj": {}
+    "C:\\Users\\flp_m\\source\\repos\\coding-test-blog\\BlogDotkon\\BlogDotkon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\BlogDotkon.csproj": {
+    "C:\\Users\\flp_m\\source\\repos\\coding-test-blog\\BlogDotkon\\BlogDotkon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\BlogDotkon.csproj",
+        "projectUniqueName": "C:\\Users\\flp_m\\source\\repos\\coding-test-blog\\BlogDotkon\\BlogDotkon.csproj",
         "projectName": "BlogDotkon",
-        "projectPath": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\BlogDotkon.csproj",
+        "projectPath": "C:\\Users\\flp_m\\source\\repos\\coding-test-blog\\BlogDotkon\\BlogDotkon.csproj",
         "packagesPath": "C:\\Users\\flp_m\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\flp_m\\source\\repos\\BlogDotkon\\BlogDotkon\\obj\\",
+        "outputPath": "C:\\Users\\flp_m\\source\\repos\\coding-test-blog\\BlogDotkon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
